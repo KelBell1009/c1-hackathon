@@ -13,7 +13,17 @@ module.exports.use = (apiKey, customerID) => {
         });
     };
 
-    function addAccount(type, nickname, balance) {
+    function deleteAllAccounts() {
+        request.get(urlWrap('accounts/')).end((err, res) => {
+            console.log(res.body);
+            let results = res.body;
+            results.forEach((account) => {
+                deleteAccount(account._id);
+            });
+        })
+    };
+
+    function createAccount(type, nickname, balance) {
         request.post(urlWrap('customers/' + customerID + '/accounts')).send({
             'type': type,
             'nickname': nickname,
@@ -59,7 +69,9 @@ module.exports.use = (apiKey, customerID) => {
     return {
         buyRandStuff: buyRandStuff,
         urlWrap: urlWrap,
+        createAccount: createAccount,
         deleteAccount: deleteAccount,
+        deleteAllAccounts: deleteAllAccounts,
         transferMoney: transferMoney
     }
 };

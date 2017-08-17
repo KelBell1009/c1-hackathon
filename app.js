@@ -69,7 +69,7 @@ function transferMoney(id1, id2, amount) {
 
 // buyRandStuff("5995d38aceb8abe242519a60", 6);
 
-
+// utils.deleteAllAccounts();
 
 request.post(urlWrap('customers/' + customerID + '/accounts')).send({
     'type': 'Credit Card',
