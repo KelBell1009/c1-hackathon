@@ -24,6 +24,21 @@ function generatePurchase(merchant_id, store_name, amount, medium, purchase_date
     });
 };
 
+function getSplurge(...splurgeList) {
+    let headers = new Headers();
+    const settings = {
+        method: 'GET'
+    };
+
+    fetch('/splurge', settings).then((res) => {
+        return res.json();
+    }).then((data) => {
+        console.log(data);
+    }).catch((err) => {
+        console.log(err);
+    });
+}
+
 function createSplurge(...splurgeList) {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
@@ -31,6 +46,38 @@ function createSplurge(...splurgeList) {
         method: 'POST',
         body: JSON.stringify(splurgeList),
         headers: headers
+    };
+
+    fetch('/splurge', settings).then((res) => {
+        return res.json();
+    }).then((data) => {
+        console.log(data);
+    }).catch((err) => {
+        console.log(err);
+    });
+}
+
+function updateSplurge(...splurgeList) {
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    const settings = {
+        method: 'PUT',
+        body: JSON.stringify(splurgeList),
+        headers: headers
+    };
+
+    fetch('/splurge', settings).then((res) => {
+        return res.json();
+    }).then((data) => {
+        console.log(data);
+    }).catch((err) => {
+        console.log(err);
+    });
+}
+
+function deleteSplurge() {
+    const settings = {
+        method: 'DELETE'
     };
 
     fetch('/splurge', settings).then((res) => {

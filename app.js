@@ -5,6 +5,7 @@ const path = require('path');
 const app = express();
 const index = require('./routes/index'); // Handle our requests in routes/index.js
 const makePurchase = require('./routes/makePurchase');
+const splurge = require('./routes/splurge');
 const utils = require('./nessieUtils').use('4e7fe49f0f5ba28b8c28032a43551d7b', '5995a81dceb8abe24251849e');
 const request = require('superagent');
 
@@ -18,6 +19,7 @@ app.set('views', path.join(__dirname, 'views')); // Specify our view folder expl
 app.engine('html', require('ejs').renderFile);
 app.use('/', index); // Serve the index page.
 app.use('/makePurchase', makePurchase);
+app.use('/splurge', splurge);
 app.listen(3000, function () {
     console.log('Started on port 3000!');
 });
