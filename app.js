@@ -8,6 +8,8 @@ const index = require('./routes/index'); // Handle our requests in routes/index.
 app.use(express.static(path.join(__dirname, 'public'))); // Expose the public folder
 app.set('views', path.join(__dirname, 'views')); // Specify our view folder explicitly
 
+app.engine('html', require('ejs').renderFile);
+
 app.use('/', index); // Serve the index page.
 
 app.listen(3000, function () {
