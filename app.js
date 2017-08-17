@@ -1,13 +1,18 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
+// const fs = require('fs');
+var merchants = require("./merchants.json");
 const app = express();
 const index = require('./routes/index'); // Handle our requests in routes/index.js
 const makePurchase = require('./routes/makePurchase');
 
+console.log(merchants.results.length);
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
 
 app.use(express.static(path.join(__dirname, 'public'))); // Expose the public folder
 app.set('views', path.join(__dirname, 'views')); // Specify our view folder explicitly
@@ -16,6 +21,7 @@ app.use('/', index); // Serve the index page.
 app.use('/makePurchase', makePurchase);
 app.listen(3000, function () {
     console.log('Started on port 3000!');
+
 });
 
 
