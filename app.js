@@ -4,6 +4,8 @@ const path = require('path');
 // const fs = require('fs');
 const app = express();
 const index = require('./routes/index'); // Handle our requests in routes/index.js
+const settings = require('./routes/settings');
+const transaction = require('./routes/transaction');
 const makePurchase = require('./routes/makePurchase');
 const splurge = require('./routes/splurge');
 const utils = require('./nessieUtils').use('4e7fe49f0f5ba28b8c28032a43551d7b', '5995a81dceb8abe24251849e');
@@ -19,6 +21,8 @@ app.use(express.static(path.join(__dirname, 'public'))); // Expose the public fo
 app.set('views', path.join(__dirname, 'views')); // Specify our view folder explicitly
 app.engine('html', require('ejs').renderFile);
 app.use('/', index); // Serve the index page.
+app.use('/settings', settings);
+app.use('/transaction', transaction);
 app.use('/makePurchase', makePurchase);
 app.use('/splurge', splurge);
 app.listen(app.get('port'), function () {
