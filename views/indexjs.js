@@ -21,26 +21,32 @@ $(function(){
     } // End if
   });
 
-  //doughnut
-  var ctxD = document.getElementById("doughnutChart").getContext('2d');
-  var myLineChart = new Chart(ctxD, {
-      type: 'doughnut',
-      data: {
-          labels: ["Starbucks", "McDonald's", "Alcohol", "Weed"], //user data
-          datasets: [
-              {
-                  data: [50, 25, 12, 13],
-                  backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1"],
-                  hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5"]
-              }
-          ]
-      },
-      options: {
-          responsive: true
-      }
+  // Counter
+  jQuery('.statistic-counter').counterUp({
+    delay: 10,
+    time: 2000
   });
 
-  $(window).scroll(function() {
+  //doughnut pie chart
+  // var ctxD = document.getElementById("doughnutChart").getContext('2d');
+  // var myLineChart = new Chart(ctxD, {
+  //     type: 'doughnut',
+  //     data: {
+  //         labels: ["Starbucks", "McDonald's", "Alcohol", "Weed"], //user data
+  //         datasets: [
+  //             {
+  //                 data: [50, 25, 12, 13],
+  //                 backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1"],
+  //                 hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5"]
+  //             }
+  //         ]
+  //     },
+  //     options: {
+  //         responsive: true
+  //     }
+  // });
+
+  $(window).scroll(function() { //scroll stuff
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
 
