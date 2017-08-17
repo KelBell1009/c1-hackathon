@@ -23,3 +23,21 @@ function generatePurchase(merchant_id, store_name, amount, medium, purchase_date
         console.log(err);
     });
 };
+
+function createSplurge(...splurgeList) {
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    const settings = {
+        method: 'POST',
+        body: JSON.stringify(splurgeList),
+        headers: headers
+    };
+
+    fetch('/splurge', settings).then((res) => {
+        return res.json();
+    }).then((data) => {
+        console.log(data);
+    }).catch((err) => {
+        console.log(err);
+    });
+}
