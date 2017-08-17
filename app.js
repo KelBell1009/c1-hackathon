@@ -14,8 +14,10 @@ app.listen(3000, function () {
 
 
 var request = require('superagent');
-request.get('http://api.reimaginebanking.com/atms?key=4e7fe49f0f5ba28b8c28032a43551d7b').end(function (res) {
-    console.log(res);
-    // console.log(res.body); //do something
-    console.log("hello");
+request.get('http://api.reimaginebanking.com/atms?key=4e7fe49f0f5ba28b8c28032a43551d7b').end(function (err, res) {
+    if (err || !res.ok) {
+        console.log('Oh no! error');
+    } else {
+        console.log('yay got ' + JSON.stringify(res.body));
+    }
 });
