@@ -2,15 +2,16 @@
   "name": "sample",
   "version": "1.0.0",
   "description": "",
-  "main": "sample.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node sample.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "3.x",
-    "superagent": "3.x"
+    "express": "^4.15.4",
+    "path": "^0.12.7",
+    "superagent": "^3.5.2"
   }
 }
