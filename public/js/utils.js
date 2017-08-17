@@ -1,8 +1,10 @@
-function generatePurchase(store, price, time) {
+function generatePurchase(merchant_id, store_name, amount, medium, purchase_date) {
     const data = {
-        'store': store,
-        'price': price,
-        'time': time
+        "merchant_id": merchant_id,
+        "medium": medium,
+        "purchase_date": purchase_date,
+        "amount": amount,
+        "description": store_name
     };
 
     let headers = new Headers();
@@ -12,7 +14,6 @@ function generatePurchase(store, price, time) {
         body: JSON.stringify(data),
         headers: headers
     };
-    let request = new Request('', settings)
 
     fetch('/makePurchase', settings).then((res) => {
         return res.json();
