@@ -57,10 +57,19 @@ function buyRandStuff(accountID, number_of_items) {
             }).end();
         }
     });
-
-
 }
-// buyRandStuff("5995cce8ceb8abe242519650", 5);
+//id1 is payer, id2 is payee
+function transferMoney(id1, id2, amount) {
+    request.post(urlWrap("accounts/" + id1 + "/transfers")).send({
+        "medium": "balance",
+        "payee_id": id2,
+        "amount": amount,
+        "transaction_date": "2017-08-17",
+        "description": "transfer of" + amount + "dollars from " + id1 + " to " + id2
+    }).end();
+}
+
+buyRandStuff("5995d38aceb8abe242519a60", 6);
 
 // request.get(urlWrap("customers")).end(function (err, res) {
 //     if (err || !res.ok) {
@@ -70,13 +79,13 @@ function buyRandStuff(accountID, number_of_items) {
 //     }
 // });
 
-request.post(urlWrap("customers/" + customerID + "/accounts")).send({
-    "type": "Credit Card",
-    "nickname": "Bob",
-    "rewards": 0,
-    "balance": 500000,
-    "account_number": "5185139221386420"
-}).end();
+// request.post(urlWrap("customers/" + customerID + "/accounts")).send({
+//     "type": "Credit Card",
+//     "nickname": "Bob",
+//     "rewards": 0,
+//     "balance": 5,
+//     "account_number": "5185139221386420"
+// }).end();
 
 // request.get(urlWrap("customers")).end(function (err, res) {
 //     if (err || !res.ok) {
