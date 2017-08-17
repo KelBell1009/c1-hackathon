@@ -3,7 +3,7 @@ const path = require('path');
 const router = express.Router();
 
 // Handle GET request for index page.
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
     res.render('index.html');
 });
 
