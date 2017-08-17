@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "yelp-fusion": "^1.0.3",
-    "express": "3.x"
+    "express": "3.x",
+    "superagent": "3.x"
   }
 }
