@@ -1,237 +1,259 @@
 {
   "results": [
     {
-      "_id": "57cf75cea73e494d8675ec49",
+      "_id": "5995f850ceb8abe24251ace1",
       "address": {
-        "city": "Chapel Hill",
-        "state": "NC",
-        "street_name": "South Rd",
-        "street_number": "5901",
-        "zip": "27514"
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
       },
       "category": [
-        "Food"
+      "kzhang"
       ],
-      "geocode": {
-        "lat": 35.909,
-        "lng": -79.046
-      },
+      "creation_date": "2017-08-17",
       "name": "Dunkin' Donuts"
     },
     {
-      "_id": "57cf75cea73e494d8675ec52",
+      "_id": "5995f870ceb8abe24251ace2",
       "address": {
-        "city": "Ithaca",
-        "state": "NY",
-        "street name": "Fairgrounds Memorial Parkway",
-        "street number": "131",
-        "zip": "14850"
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
       },
       "category": [
-        "food",
-        "home_goods_store",
-        "store",
-        "point_of_interest",
-        "establishment"
+      "kzhang"
       ],
-      "geocode": {
-        "lat": 42.429088,
-        "lng": -76.51341959999999
-      },
+      "creation_date": "2017-08-17",
       "name": "Dollar Tree"
     },
     {
-      "_id": "57cf75cea73e494d8675ec5f",
+      "_id": "5995f884ceb8abe24251ace3",
       "address": {
-        "city": "Ithaca",
-        "state": "NY",
-        "street name": "Fairgrounds Memorial Parkway",
-        "street number": "135",
-        "zip": "14850"
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
       },
       "category": [
-        "department_store",
-        "electronics_store",
-        "grocery_or_supermarket",
-        "food",
-        "store",
-        "point_of_interest",
-        "establishment"
+      "kzhang"
       ],
-      "geocode": {
-        "lat": 42.4275522,
-        "lng": -76.5140254
-      },
+      "creation_date": "2017-08-17",
       "name": "Walmart"
     },
     {
-      "_id": "57cf75cea73e494d8675ec63",
+      "_id": "5995f8a5ceb8abe24251ace4",
       "address": {
-        "city": "Interlaken",
-        "state": "NY",
-        "street name": "County Road 150",
-        "street number": "3862",
-        "zip": "14847"
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
       },
       "category": [
-        "natural_feature",
-        "food",
-        "store",
-        "point_of_interest",
-        "establishment"
+      "kzhang"
       ],
-      "geocode": {
-        "lat": 42.62786999999999,
-        "lng": -76.71015400000002
-      },
-      "name": "Lucas Vineyards"
-    },
-    {
-      "_id": "57cf75cea73e494d8675ec66",
-      "address": {
-        "city": "Ithaca",
-        "state": "NY",
-        "street name": "Catherwood Road",
-        "street number": "40",
-        "zip": "14850"
-      },
-      "category": [
-        "store",
-        "point_of_interest",
-        "establishment"
-      ],
-      "geocode": {
-        "lat": 42.483327,
-        "lng": -76.490933
-      },
-      "name": "Pop-Poster Art"
-    },
-    {
-      "_id": "57cf75cea73e494d8675ec6f",
-      "address": {
-        "city": "Ithaca",
-        "state": "NY",
-        "street name": "East Green Street",
-        "street number": "131",
-        "zip": "14850"
-      },
-      "category": [
-        "clothing_store",
-        "shoe_store",
-        "home_goods_store",
-        "store",
-        "point_of_interest",
-        "establishment"
-      ],
-      "geocode": {
-        "lat": 42.4385229,
-        "lng": -76.49717679999999
-      },
+      "creation_date": "2017-08-17",
       "name": "Urban Outfitters"
     },
     {
-      "_id": "57cf75cea73e494d8675ec53",
+      "_id": "5995f8b4ceb8abe24251ace5",
       "address": {
-        "city": "Ithaca",
-        "state": "NY",
-        "street name": "South Meadow Street",
-        "street number": "748",
-        "zip": "14850"
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
       },
       "category": [
-        "Tech"
+      "kzhang"
       ],
-      "geocode": {
-        "lat": 42.42904199999999,
-        "lng": -76.508494
-      },
-      "name": "AT&T"
-    },
-    {
-      "_id": "57cf75cea73e494d8675ed67",
-      "address": {
-        "city": "West Lafayette",
-        "state": "IN",
-        "street name": "South Chauncey Avenue",
-        "street number": "135",
-        "zip": "47906"
-      },
-      "category": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "geocode": {
-        "lat": 40.4228129,
-        "lng": -86.9077265
-      },
+      "creation_date": "2017-08-17",
       "name": "Subway"
     },
     {
-      "_id": "57cf75cea73e494d8675ecd7",
+      "_id": "5995f8c6ceb8abe24251ace6",
       "address": {
-        "city": "Ithaca",
-        "state": "NY",
-        "street name": "North Triphammer Road",
-        "street number": "2350",
-        "zip": "14850"
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
       },
       "category": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
+      "kzhang"
       ],
-      "geocode": {
-        "lat": 42.4847979,
-        "lng": -76.4868989
-      },
+      "creation_date": "2017-08-17",
       "name": "McDonald's"
     },
     {
-      "_id": "57cf75cea73e494d8675f23a",
+      "_id": "5995f8d2ceb8abe24251ace7",
       "address": {
-        "city": "Austin",
-        "state": "TX",
-        "street name": "Great Hills Trail",
-        "street number": "9722",
-        "zip": "78759"
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
       },
       "category": [
-        "health",
-        "clothing_store",
-        "store",
-        "point_of_interest",
-        "establishment"
+      "kzhang"
       ],
-      "geocode": {
-        "lat": 30.3949962,
-        "lng": -97.7506064
-      },
+      "creation_date": "2017-08-17",
       "name": "Sephora"
     },
     {
-      "_id": "57cf75cea73e494d8675ed68",
+      "_id": "5995f8d9ceb8abe24251ace8",
       "address": {
-        "city": "West Lafayette",
-        "state": "IN",
-        "street name": "Sagamore Parkway West",
-        "street number": "545",
-        "zip": "47906"
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
       },
       "category": [
-        "cafe",
-        "food",
-        "store",
-        "point_of_interest",
-        "establishment"
+      "kzhang"
       ],
-      "geocode": {
-        "lat": 40.4529074,
-        "lng": -86.9153012
+      "creation_date": "2017-08-17",
+      "name": "Target"
+    },
+    {
+      "_id": "5995f8e2ceb8abe24251ace9",
+      "address": {
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
       },
+      "category": [
+      "kzhang"
+      ],
+      "creation_date": "2017-08-17",
+      "name": "Kroger"
+    },
+    {
+      "_id": "5995f8edceb8abe24251aceb",
+      "address": {
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
+      },
+      "category": [
+      "kzhang"
+      ],
+      "creation_date": "2017-08-17",
       "name": "Starbucks"
+    },
+    {
+      "_id": "5995f920ceb8abe24251acf0",
+      "address": {
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
+      },
+      "category": [
+      "kzhang"
+      ],
+      "creation_date": "2017-08-17",
+      "name": "7-Eleven"
+    },
+    {
+      "_id": "5995f967ceb8abe24251acf1",
+      "address": {
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
+      },
+      "category": [
+      "kzhang"
+      ],
+      "creation_date": "2017-08-17",
+      "name": "Michael Kors"
+    },
+    {
+      "_id": "5995f96fceb8abe24251acf2",
+      "address": {
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
+      },
+      "category": [
+      "kzhang"
+      ],
+      "creation_date": "2017-08-17",
+      "name": "Home Depot"
+    },
+    {
+      "_id": "5995f979ceb8abe24251acf3",
+      "address": {
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
+      },
+      "category": [
+      "kzhang"
+      ],
+      "creation_date": "2017-08-17",
+      "name": "PetSmart"
+    },
+    {
+      "_id": "5995f981ceb8abe24251acf4",
+      "address": {
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
+      },
+      "category": [
+      "kzhang"
+      ],
+      "creation_date": "2017-08-17",
+      "name": "Harris Teeter"
+    },
+    {
+      "_id": "5995f989ceb8abe24251acf5",
+      "address": {
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
+      },
+      "category": [
+      "kzhang"
+      ],
+      "creation_date": "2017-08-17",
+      "name": "Costco"
+    },
+    {
+      "_id": "5995f9c0ceb8abe24251acf7",
+      "address": {
+      "city": "string",
+      "state": "NC",
+      "street_name": "string",
+      "street_number": "string",
+      "zip": "27708"
+      },
+      "category": [
+      "kzhang"
+      ],
+      "creation_date": "2017-08-17",
+      "name": "Exxon Gas"
     }
   ]
 }

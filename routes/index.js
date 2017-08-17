@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const bootstrap = require('bootstrap');
 const router = express.Router();
 
 // Handle GET request for index page.
