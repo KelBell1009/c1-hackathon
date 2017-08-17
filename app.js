@@ -18,17 +18,32 @@ function urlWrap(input) {
     return "http://api.reimaginebanking.com/" + input + "?key=4e7fe49f0f5ba28b8c28032a43551d7b";
 }
 
-
+var customerID = "5995a81dceb8abe24251849e"; //Donald Trump's ID
 var request = require('superagent');
-request.get(urlWrap("customers")).end(function (err, res) {
-    if (err || !res.ok) {
-        console.log('Oh no! error');
-    } else {
-        console.log('yay got ' + JSON.stringify(res.body));
-    }
-});
 
+// request.get(urlWrap("customers")).end(function (err, res) {
+//     if (err || !res.ok) {
+//         console.log('Oh no! error');
+//     } else {
+//         console.log('yay got ' + JSON.stringify(res.body));
+//     }
+// });
 
+request.post("http://api.reimaginebanking.com/customers/5995a81dceb8abe24251849e/accounts?key=4e7fe49f0f5ba28b8c28032a43551d7b").send({
+    "type": "Savings",
+    "nickname": "save",
+    "rewards": 0,
+    "balance": 10000,
+    "account_number": "5185139221386420"
+}).end();
+// request.get(urlWrap("customers")).end(function (err, res) {
+//     if (err || !res.ok) {
+//         console.log('Oh no! error');
+//     } else {
+//         console.log('yay got ' + JSON.stringify(res.body));
+//     }
+// });
+// console.log(urlWrap("customers/" + customerID + "/accounts"));
 // request.post().send({
 //         "first_name": "Donald",
 //         "last_name": "Trump",
