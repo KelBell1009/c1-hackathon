@@ -6,7 +6,7 @@ const utils = require('../nessieUtils').use('4e7fe49f0f5ba28b8c28032a43551d7b', 
 router.get('/', (req, res, next) => {
     request.get(utils.urlWrap('customers/5995a81dceb8abe24251849e'))
     .end((err, returnedRes) => {
-        res.json(returnedRes.body.address.street_number.split(','));
+        res.json(returnedRes.body.address.street_number.trim().split(','));
     });
 });
 
@@ -14,7 +14,7 @@ router.post('/', (req, res, next) => {
     request.put(utils.urlWrap('customers/5995a81dceb8abe24251849e'))
     .send({
         'address': {
-            'street_number': req.body.join(',')
+            'street_number': req.body.trim().join(',')
         }
     })
     .end((err, returnedRes2) => {
@@ -26,7 +26,7 @@ router.put('/', (req, res, next) => {
     request.get(utils.urlWrap('customers/5995a81dceb8abe24251849e'))
     .end((err, returnedRes) => {
         let json = returnedRes.body.address;
-        let splurgeList = json.street_number + ',';
+        let splurgeList = json.street_number.trim() + ',';
         let listToAppend = req.body.join(',');
         let result = splurgeList + listToAppend;
         json.street_number = result;
