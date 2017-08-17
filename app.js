@@ -22,10 +22,14 @@ app.use('/makePurchase', makePurchase);
 app.use('/splurge', splurge);
 app.listen(3000, function () {
     console.log('Started on port 3000!');
-
 });
-
-
+var dict = utils.filterTransactions("5995ff26ceb8abe24251ad1c");
+console.log(dict);
+// utils.deleteAllAccounts();
+// utils.createAccount("Checking", "Main Checking", 50000);
+// for (var i = 0; i < 100; i++) {
+//     utils.buyRandStuff("5995ff26ceb8abe24251ad1c");
+// }
 // request.post().send({
 //         'first_name': 'Donald',
 //         'last_name': 'Trump',
