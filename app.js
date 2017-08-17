@@ -1,18 +1,25 @@
+const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
 const app = express();
 const index = require('./routes/index'); // Handle our requests in routes/index.js
+const makePurchase = require('./routes/makePurchase');
+
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public'))); // Expose the public folder
 app.set('views', path.join(__dirname, 'views')); // Specify our view folder explicitly
 app.engine('html', require('ejs').renderFile);
 app.use('/', index); // Serve the index page.
+app.use('/makePurchase', makePurchase);
 app.listen(3000, function () {
     console.log('Started on port 3000!');
 });
 
 
-//sample URL is http://api.reimaginebanking.com/customers/5995a81dceb8abe24251849e/accounts?key=4e7fe49f0f5ba28b8c28032a43551d7b. 
+//sample URL is http://api.reimaginebanking.com/customers/5995a81dceb8abe24251849e/accounts?key=4e7fe49f0f5ba28b8c28032a43551d7b.
 //input parameter is the "customers/5995a81dceb8abe24251849e/accounts" part.
 function urlWrap(input) {
     return "http://api.reimaginebanking.com/" + input + "?key=4e7fe49f0f5ba28b8c28032a43551d7b";
