@@ -1,0 +1,237 @@
+{
+  "results": [
+    {
+      "_id": "57cf75cea73e494d8675ec49",
+      "address": {
+        "city": "Chapel Hill",
+        "state": "NC",
+        "street_name": "South Rd",
+        "street_number": "5901",
+        "zip": "27514"
+      },
+      "category": [
+        "Food"
+      ],
+      "geocode": {
+        "lat": 35.909,
+        "lng": -79.046
+      },
+      "name": "Dunkin' Donuts"
+    },
+    {
+      "_id": "57cf75cea73e494d8675ec52",
+      "address": {
+        "city": "Ithaca",
+        "state": "NY",
+        "street name": "Fairgrounds Memorial Parkway",
+        "street number": "131",
+        "zip": "14850"
+      },
+      "category": [
+        "food",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "geocode": {
+        "lat": 42.429088,
+        "lng": -76.51341959999999
+      },
+      "name": "Dollar Tree"
+    },
+    {
+      "_id": "57cf75cea73e494d8675ec5f",
+      "address": {
+        "city": "Ithaca",
+        "state": "NY",
+        "street name": "Fairgrounds Memorial Parkway",
+        "street number": "135",
+        "zip": "14850"
+      },
+      "category": [
+        "department_store",
+        "electronics_store",
+        "grocery_or_supermarket",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "geocode": {
+        "lat": 42.4275522,
+        "lng": -76.5140254
+      },
+      "name": "Walmart"
+    },
+    {
+      "_id": "57cf75cea73e494d8675ec63",
+      "address": {
+        "city": "Interlaken",
+        "state": "NY",
+        "street name": "County Road 150",
+        "street number": "3862",
+        "zip": "14847"
+      },
+      "category": [
+        "natural_feature",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "geocode": {
+        "lat": 42.62786999999999,
+        "lng": -76.71015400000002
+      },
+      "name": "Lucas Vineyards"
+    },
+    {
+      "_id": "57cf75cea73e494d8675ec66",
+      "address": {
+        "city": "Ithaca",
+        "state": "NY",
+        "street name": "Catherwood Road",
+        "street number": "40",
+        "zip": "14850"
+      },
+      "category": [
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "geocode": {
+        "lat": 42.483327,
+        "lng": -76.490933
+      },
+      "name": "Pop-Poster Art"
+    },
+    {
+      "_id": "57cf75cea73e494d8675ec6f",
+      "address": {
+        "city": "Ithaca",
+        "state": "NY",
+        "street name": "East Green Street",
+        "street number": "131",
+        "zip": "14850"
+      },
+      "category": [
+        "clothing_store",
+        "shoe_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "geocode": {
+        "lat": 42.4385229,
+        "lng": -76.49717679999999
+      },
+      "name": "Urban Outfitters"
+    },
+    {
+      "_id": "57cf75cea73e494d8675ec53",
+      "address": {
+        "city": "Ithaca",
+        "state": "NY",
+        "street name": "South Meadow Street",
+        "street number": "748",
+        "zip": "14850"
+      },
+      "category": [
+        "Tech"
+      ],
+      "geocode": {
+        "lat": 42.42904199999999,
+        "lng": -76.508494
+      },
+      "name": "AT&T"
+    },
+    {
+      "_id": "57cf75cea73e494d8675ed67",
+      "address": {
+        "city": "West Lafayette",
+        "state": "IN",
+        "street name": "South Chauncey Avenue",
+        "street number": "135",
+        "zip": "47906"
+      },
+      "category": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "geocode": {
+        "lat": 40.4228129,
+        "lng": -86.9077265
+      },
+      "name": "Subway"
+    },
+    {
+      "_id": "57cf75cea73e494d8675ecd7",
+      "address": {
+        "city": "Ithaca",
+        "state": "NY",
+        "street name": "North Triphammer Road",
+        "street number": "2350",
+        "zip": "14850"
+      },
+      "category": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "geocode": {
+        "lat": 42.4847979,
+        "lng": -76.4868989
+      },
+      "name": "McDonald's"
+    },
+    {
+      "_id": "57cf75cea73e494d8675f23a",
+      "address": {
+        "city": "Austin",
+        "state": "TX",
+        "street name": "Great Hills Trail",
+        "street number": "9722",
+        "zip": "78759"
+      },
+      "category": [
+        "health",
+        "clothing_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "geocode": {
+        "lat": 30.3949962,
+        "lng": -97.7506064
+      },
+      "name": "Sephora"
+    },
+    {
+      "_id": "57cf75cea73e494d8675ed68",
+      "address": {
+        "city": "West Lafayette",
+        "state": "IN",
+        "street name": "Sagamore Parkway West",
+        "street number": "545",
+        "zip": "47906"
+      },
+      "category": [
+        "cafe",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "geocode": {
+        "lat": 40.4529074,
+        "lng": -86.9153012
+      },
+      "name": "Starbucks"
+    }
+  ]
+}
