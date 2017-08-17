@@ -1,6 +1,6 @@
 const request = require('superagent');
 const merchants = require('./merchants.json').results;
-
+const merchSubset = require('./merchantssubset.json').results;
 module.exports.use = (apiKey, customerID) => {
 
     function urlWrap(input) {
@@ -43,16 +43,19 @@ module.exports.use = (apiKey, customerID) => {
                 accountType = res.body.type;
             }
             // console.log(res.body);
-            merchants.forEach((singleMerch) => {
-                console.log(singleMerch);
-                request.post(urlWrap('accounts/' + accountID + '/purchases')).send({
-                    'merchant_id': singleMerch._id,
-                    'medium': 'balance',
-                    'purchase_date': '2017-08-17',
-                    'amount': 16,
-                    'description': accountType + ',' + accountName + ',' + singleMerch.name
-                }).end();
-            });
+            // merchants.forEach((singleMerch) => {
+            var randNum = Math.floor(Math.random() * merchSubset.length);
+            singleMerch = merchSubset[randNum];
+            // console.log(singleMerch);
+            var randCost = Math.floor(Math.random() * 30) + 5;
+            request.post(urlWrap('accounts/' + accountID + '/purchases')).send({
+                'merchant_id': singleMerch._id,
+                'medium': 'balance',
+                'purchase_date': '2017-08-17',
+                'amount': randCost,
+                'description': accountType + ',' + accountName + ',' + singleMerch.name
+            }).end();
+            // });
         });
     };
     //id1 is payer, id2 is payee
@@ -66,12 +69,32 @@ module.exports.use = (apiKey, customerID) => {
         }).end();
     };
 
+    function filterTransactions(accountID) {
+        var dict = {};
+        request.get(urlWrap('accounts/' + accountID + '/purchases')).end((err, res) => {
+            // console.log(res.body);
+            let results = res.body;
+            for (var i = 0; i < results.length; i++) {
+                var name = results[i].description.split(",")[2];
+                // console.log(name);
+                if (name in dict) {
+                    dict[name] += results[i].amount;
+                    // console.log(name + " : " + dict[name]);
+                } else {
+                    dict[name] = results[i].amount;
+                }
+            }
+        });
+        return dict;
+    };
+
     return {
         buyRandStuff: buyRandStuff,
         urlWrap: urlWrap,
         createAccount: createAccount,
         deleteAccount: deleteAccount,
         deleteAllAccounts: deleteAllAccounts,
-        transferMoney: transferMoney
+        transferMoney: transferMoney,
+        filterTransactions: filterTransactions
     }
 };
