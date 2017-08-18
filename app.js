@@ -22,7 +22,7 @@ app.set('views', path.join(__dirname, 'views')); // Specify our view folder expl
 app.engine('html', require('ejs').renderFile);
 app.use('/', index); // Serve the index page.
 app.use('/settings', settings);
-app.use('/transaction', transaction);
+app.use('/transactions', transaction);
 app.use('/makePurchase', makePurchase);
 app.use('/splurge', splurge);
 app.listen(app.get('port'), function () {
