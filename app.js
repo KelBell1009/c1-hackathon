@@ -10,7 +10,7 @@ const makePurchase = require('./routes/makePurchase');
 const splurge = require('./routes/splurge');
 const utils = require('./nessieUtils').use('4e7fe49f0f5ba28b8c28032a43551d7b', '59963e18ceb8abe24251ae8c');
 const request = require('superagent');
-
+const getTransactions = require('./routes/getTransactions');
 app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -22,6 +22,7 @@ app.set('views', path.join(__dirname, 'views')); // Specify our view folder expl
 app.engine('html', require('ejs').renderFile);
 app.use('/', index); // Serve the index page.
 app.use('/settings', settings);
+app.use('/getTransactions',getTransactions);
 app.use('/transactions', transaction);
 app.use('/makePurchase', makePurchase);
 app.use('/splurge', splurge);
