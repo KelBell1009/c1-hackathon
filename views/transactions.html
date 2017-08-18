@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Vixen</title>
   <link rel="icon" href="http://www.stickermotions.com/wp-content/uploads/2014/12/6531209575142566321.png">;
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-  <link href="styles.css" rel="stylesheet"></script>
+  <link href="styles.css" rel="stylesheet">
+  </script>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://github.com/cornellian/c1-hackathon">Github</a>
+        <a class="navbar-brand" href="https://github.com/cornellian/c1-hackathon">Github</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">STATISTICS</a></li>
+          <li><a href="/">VIXEN</a></li>
+          <li><a href="/transactions">TRANSACTIONS</a></li>
+          <li><a href="/settings">SETTINGS</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/">STATISTICS</a></li>
-        <li><a href="/">VIXEN</a></li>
-        <li><a href="/transactions">TRANSACTIONS</a></li>
-        <li><a href="/settings">SETTINGS</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="jumbotron text-center">
-  <h1>Vixen</h1>
-  <p>Don't spend money</p>
-</div>
+  <div class="jumbotron text-center">
+    <h1>Vixen</h1>
+    <p>Don't spend money</p>
+  </div>
 
   <table class="table transactions-table">
     <thead>
@@ -57,5 +60,6 @@
     </tbody>
   </table>
   <script src="js/transactionsjs.js"></script>
-  </body>
+</body>
+
 </html>
