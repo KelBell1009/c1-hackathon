@@ -1,3 +1,5 @@
+document.getElementById('statistic-counter').innerHTML = Math.floor(Math.random() * 5).toString();
+
 $(function () {
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
@@ -22,18 +24,16 @@ $(function () {
   });
 
   var myVal = parseInt(document.getElementById("statistic-counter").innerText);
-  if(myVal == 0) {
-      $('#good').hide();
-      $('#bad').hide();
-      $('#baby').show();
-      }
-  else {
-    if(myVal < 2) {
+  if (myVal == 0) {
+    $('#good').hide();
+    $('#bad').hide();
+    $('#baby').show();
+  } else {
+    if (myVal < 2) {
       $('#baby').hide();
       $('#good').hide();
       $('#bad').show();
-    }
-    else {
+    } else {
       $('#baby').hide();
       $('#bad').hide();
       $('#good').show();
@@ -277,11 +277,11 @@ $(function () {
     time: 2000
   });
 
-  $.get('/getChecking', function(data) {
-     document.getElementById('checking-amount').innerText = data.balance;
+  $.get('/getChecking', function (data) {
+    document.getElementById('checking-amount').innerText = data.balance;
   });
-  $.get('/getSavings', function(data) {
-     document.getElementById('saving-amount').innerText = data.balance;
+  $.get('/getSavings', function (data) {
+    document.getElementById('saving-amount').innerText = data.balance;
   });
 
   //doughnut pie chart
