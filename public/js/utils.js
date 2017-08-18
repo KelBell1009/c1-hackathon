@@ -24,7 +24,7 @@ function generatePurchase(merchant_id, store_name, amount, medium, purchase_date
     });
 };
 
-function getSplurge(...splurgeList) {
+function getSplurge() {
     let headers = new Headers();
     const settings = {
         method: 'GET'
