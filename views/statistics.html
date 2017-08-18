@@ -87,74 +87,54 @@
     </div>
   </div>
   <div class="col-sm-5">
-      <!--<canvas id="doughnutChart"></canvas>-->
-      <head>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-          google.charts.load("current", {
-            packages: ["corechart"]
-          });
-          google.charts.setOnLoadCallback(drawChart);
-
-          function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-              ['Language', 'Speakers (in millions)'],
-              ['Assamese', 13],
-              ['Bengali', 83],
-              ['Bodo', 1.4],
-              ['Dogri', 2.3],
-              ['Gujarati', 46],
-              ['Hindi', 300],
-              ['Kannada', 38],
-              ['Kashmiri', 5.5],
-              ['Konkani', 5],
-              ['Maithili', 20],
-              ['Malayalam', 33],
-              ['Manipuri', 1.5],
-              ['Marathi', 72],
-              ['Nepali', 2.9],
-              ['Oriya', 33],
-              ['Punjabi', 29],
-              ['Sanskrit', 0.01],
-              ['Santhali', 6.5],
-              ['Sindhi', 2.5],
-              ['Tamil', 61],
-              ['Telugu', 74],
-              ['Urdu', 52]
-            ]);
-
-            var options = {
-              title: 'Indian Language Use',
-              legend: 'none',
-              pieSliceText: 'label',
-              slices: {
-                4: {
-                  offset: 0.2
-                },
-                12: {
-                  offset: 0.3
-                },
-                14: {
-                  offset: 0.4
-                },
-                15: {
-                  offset: 0.5
-                },
-              },
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-            chart.draw(data, options);
-          }
-        </script>
-      </head>
-
-      <body>
-        <div id="piechart" style="width: 900px; height: 500px;"></div>
-      </body>
+      <div class="col-sm-4">
+        <!--<canvas id="doughnutChart"></canvas>-->
+          <div id="piechart" style="width: 900px; height: 500px;"></div>
+      </div>
     </div>
-  <script src="js/statisticsjs.js"></script>
+  </div>
+  <script src="js/indexjs.js"></script>
+  <script src="js/utils.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {
+      packages: ["corechart"]
+    });
+    google.charts.setOnLoadCallback(drawChart);
 
+    function drawChart() {
+        let result = getAmountGoodPurchases();
+        console.log(result);
+      var data = google.visualization.arrayToDataTable([
+        ['Count', 'Splurges'],
+        ['Not Splurge', goodCount],
+        ['Splurge', badCount]
+      ]);
+
+      var options = {
+        title: 'Number of Splurges',
+        legend: 'none',
+        pieSliceText: 'label',
+        slices: {
+          4: {
+            offset: 0.2
+          },
+          12: {
+            offset: 0.3
+          },
+          14: {
+            offset: 0.4
+          },
+          15: {
+            offset: 0.5
+          },
+        },
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+  </script>
 </body>
 
 </html>
