@@ -21,6 +21,24 @@ $(function () {
     } // End if
   });
 
+  var myVal = $('counter').val();
+  if(myVal == 0) {
+      $('baby').show(); 
+      $('good').hide();
+      $('bad').hide();
+      }
+  else {
+    if(myVal < 2) {
+      $('baby').hide(); 
+      $('good').hide();
+      $('bad').show();
+    }
+    else {
+      $('baby').hide(); 
+      $('good').show();
+      $('bad').hide();
+    }
+  }
   // $("cmn-toggle-4").click({
   //   let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
   //   if(splurgeList == null) {
