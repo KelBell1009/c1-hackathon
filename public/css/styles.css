@@ -22,16 +22,11 @@ h2 {
 h4 {
     font-size: 24px;
     line-height: 1.375em;
-    color: white;
+    color: #252525;
     font-weight: 400;
     margin-bottom: 30px;
     font-family: 'Raleway', sans-serif;
 }
-
-#aboutbottom {
-    color: rgba(0, 0, 0, 0.00);
-}
-
 
 .jumbotron {
     background-color: #3498DB;
@@ -127,7 +122,7 @@ h4 {
     color: #fff !important;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #3498DB !important;
+    color: rgb(164, 194, 224) !important;
     background-color: #fff !important;
 }
 .navbar-default .navbar-toggle {
@@ -137,7 +132,7 @@ h4 {
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #3498DB;
+    color: rgb(164, 194, 224);
 }
 .slideanim {visibility:hidden;}
 .slide {
