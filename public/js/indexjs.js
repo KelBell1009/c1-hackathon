@@ -21,6 +21,237 @@ $(function () {
     } // End if
   });
 
+  $("cmn-toggle-4").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Dunkin' Donuts");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Dunkin' Donuts");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-1").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Dollar Tree");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Dollar Tree");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-2").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Walmart");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Walmart");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-3").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Urban Outfitters");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Urban Outfitters");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-4").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Subway");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Subway");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-5").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("McDonald's");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("McDonald's");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-6").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Sephora");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Sephora");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-7").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Target");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Target");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-8").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Kroger");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Kroger");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-9").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Starbucks");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Starbucks");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-10").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("7-Eleven");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("7-Eleven");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-11").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Michael Kors");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Michael Kors");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-12").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Home Depot");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Home Depot");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-13").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("PetSmart");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("PetSmart");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-14").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Harris Teeter");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Harris Teeter");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-15").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Costco");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Costco");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-16").click({
+    let splurgeList = JSON.parse(localStorage.getItem('splurgeList'));
+    if(splurgeList == null) {
+      let list = [];
+      list.append("Exxon");
+      localStorage.setItem('splurgeList', JSON.stringify(list));
+    }
+    else {
+      splurgeList.append("Exxon");
+      localStorage.setItem('splurgeList', JSON.stringify(splurgeList));
+    }
+  });
+
+  $("cmn-toggle-4-17").click({
+    let isDonation = localStorage.getItem("isDonation");
+    if(isDonation == null) {
+      localStorage.setItem('isDonation', true);
+    }
+    else {
+      localStorage.setItem('isDonation', false);
+    }
+  });
+
   // Counter
   jQuery('.statistic-counter').counterUp({
     delay: 10,
@@ -104,3 +335,38 @@ $(function () {
 //           failed_call = true;
 //         }}
 //       });
+console.log("derp");
+$.ajax({
+  url: '/getTransactions',
+  type: 'GET',
+  dataType: 'json',
+  success: function (data) {
+    console.log(data);
+    $.ajax({
+      url: '/splurge',
+      type: 'GET',
+      dataType: 'json',
+      success: function (data2) {
+        console.log(data2);
+        data.forEach(function (element1) {
+          data2.forEach(function (element) {
+            if (element.length > 0) {
+              if (element1.description.split(',')[2] == element) {
+                console.log(element1.amount);
+                return element1.purchase_date;
+              }
+            }
+          }, this);
+        }, this);
+      },
+      error: function () {
+        data_output = true;
+        failed_call = true;
+      }
+    });
+  },
+  error: function () {
+    data_output = true;
+    failed_call = true;
+  }
+});
