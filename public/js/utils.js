@@ -9,6 +9,7 @@ function generatePurchase(merchant_id, store_name, amount, medium, purchase_date
 
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
+    headers.append('isDonation', isDonation);
     const settings = {
         method: 'POST',
         body: JSON.stringify(data),
