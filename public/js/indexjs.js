@@ -23,18 +23,18 @@ $(function () {
 
   var myVal = $('counter').val();
   if(myVal == 0) {
-      $('baby').show(); 
+      $('baby').show();
       $('good').hide();
       $('bad').hide();
       }
   else {
     if(myVal < 2) {
-      $('baby').hide(); 
+      $('baby').hide();
       $('good').hide();
       $('bad').show();
     }
     else {
-      $('baby').hide(); 
+      $('baby').hide();
       $('good').show();
       $('bad').hide();
     }
@@ -260,16 +260,16 @@ $(function () {
   //   }
   // });
 
-  $("#cmn-toggle-4-18").click({
-    // console.log("hello");
-    let isDonation = localStorage.getItem("isDonation");
-    if(typeof isDonation != 'undefined') {
-      localStorage.setItem('isDonation', "true");
-    }
-    else {
-      localStorage.setItem('isDonation', "false");
-    }
-  });
+  // $("#cmn-toggle-4-18").click({
+  //   // console.log("hello");
+  //   let isDonation = localStorage.getItem("isDonation");
+  //   if(typeof isDonation != 'undefined') {
+  //     localStorage.setItem('isDonation', "true");
+  //   }
+  //   else {
+  //     localStorage.setItem('isDonation', "false");
+  //   }
+  // });
 
   // Counter
   jQuery('.statistic-counter').counterUp({
