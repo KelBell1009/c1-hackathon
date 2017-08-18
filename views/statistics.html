@@ -100,11 +100,9 @@
     google.charts.load("current", {
       packages: ["corechart"]
     });
-    google.charts.setOnLoadCallback(drawChart);
+    google.charts.setOnLoadCallback(getAmountGoodPurchases);
 
-    function drawChart() {
-        let result = getAmountGoodPurchases();
-        console.log(result);
+    function drawChart(goodCount, badCount) {
       var data = google.visualization.arrayToDataTable([
         ['Count', 'Splurges'],
         ['Not Splurge', goodCount],

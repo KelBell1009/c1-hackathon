@@ -154,20 +154,11 @@ function getAmountGoodPurchases() {
             });
             badCount = totalTransactions - goodCount;
             // create pie chart here
-            return {
-                "total": totalTransactions,
-                "goodCount": goodCount,
-                "badCount": badCount
-            }
-        }; return 1;).catch((err) => {
+            drawChart(goodCount, badCount);
+        }).catch((err) => {
             console.log(err);
         });
     }).catch((err) => {
         console.log(err);
     });
-    // return {
-    //     "total": totalTransactions,
-    //     "goodCount": goodCount,
-    //     "badCount": badCount
-    // }
 }
