@@ -20,8 +20,9 @@
 // '"payer_id": "5995ff26ceb8abe24251ad1c",' +
 // '"payee_id": "5995f967ceb8abe24251acf1"}]';
 var transactions;
+var accountID = "59963f42ceb8abe24251ae8e";
 $.ajax({
-  url: 'http://api.reimaginebanking.com/accounts/5995ff26ceb8abe24251ad1c/purchases?key=4e7fe49f0f5ba28b8c28032a43551d7b',
+  url: 'http://api.reimaginebanking.com/accounts/' + accountID + '/purchases?key=4e7fe49f0f5ba28b8c28032a43551d7b',
   type: 'GET',
   dataType: 'json',
   success: function (data) {

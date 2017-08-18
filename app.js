@@ -8,7 +8,7 @@ const settings = require('./routes/settings');
 const transaction = require('./routes/transaction');
 const makePurchase = require('./routes/makePurchase');
 const splurge = require('./routes/splurge');
-const utils = require('./nessieUtils').use('4e7fe49f0f5ba28b8c28032a43551d7b', '5995a81dceb8abe24251849e');
+const utils = require('./nessieUtils').use('4e7fe49f0f5ba28b8c28032a43551d7b', '59963e18ceb8abe24251ae8c');
 const request = require('superagent');
 
 app.set('port', (process.env.PORT || 5000));
@@ -31,16 +31,16 @@ app.listen(app.get('port'), function () {
 // var dict = utils.filterTransactions("5995ff26ceb8abe24251ad1c");
 // console.log(dict);
 // utils.deleteAllAccounts();
-// utils.createAccount("Checking", "Main Checking", 50000);
-// for (var i = 0; i < 100; i++) {
-//     utils.buyRandStuff("5995ff26ceb8abe24251ad1c");
-// }
-// request.post().send({
-//         'first_name': 'Donald',
-//         'last_name': 'Trump',
+// utils.createAccount("Checking", "Darth Vader's Personal Stash", 50000);
+for (var i = 0; i < 100; i++) {
+    utils.buyRandStuff("59963f42ceb8abe24251ae8e");
+}
+// request.post(utils.urlWrap("")).send({
+//         'first_name': 'Princess',
+//         'last_name': 'Leia',
 //         'address': {
-//             'street_number': '1600',
-//             'street_name': 'Pennsylvania Ave',
+//             'street_number': '1020',
+//             'street_name': 'Coasdf;kl',
 //             'city': 'Washington',
 //             'state': 'DC',
 //             'zip': '20500'
