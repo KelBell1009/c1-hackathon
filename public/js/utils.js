@@ -146,14 +146,14 @@ function getAmountGoodPurchases() {
             return res.json();
         }).then((data) => {
             totalTransactions = data.length;
-            goodCount = 0;
+            badCount = 0;
             data.forEach(x => {
                 let description = x.description.split(',');
                 if (description.map(y => splurgeList.includes(y)).includes(true)) {
-                    goodCount++;
+                    badCount++;
                 }
             });
-            badCount = totalTransactions - goodCount;
+            goodCount = totalTransactions - badCount;
             // create pie chart here
             drawChart(goodCount, badCount);
         }).catch((err) => {
