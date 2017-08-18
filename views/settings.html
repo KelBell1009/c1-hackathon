@@ -1,187 +1,190 @@
 <!doctype html>
 <html>
+
 <head>
   <title>Settings - Splurge</title>
-	<link rel="icon" href="http://www.stickermotions.com/wp-content/uploads/2014/12/6531209575142566321.png">;
+  <link rel="icon" href="http://www.stickermotions.com/wp-content/uploads/2014/12/6531209575142566321.png">;
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-	<link href="css/styles.css" rel="stylesheet"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+  </script>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <h4><strong>Princess Leia</strong></h4>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-		<ul class="nav navbar-nav navbar-right">
-            <li><a href="/">DASHBOARD</a></li>
-            <li><a href="/transactions">TRANSACTIONS</a></li>
-            <li><a href="/statistics">STATISTICS</a></li>
-            <li><a href="/settings">SETTINGS</a></li>
-		</ul>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron text-center">
-    <div class = "row">
-      <div class = "col-sm-6" align = "right">
-        <h1>Vixen</h1>
-        <p>splurge less</p>
-     </div>
-      <div class = "col-sm-6" align = "left">
-          <img src="http://www.stickermotions.com/wp-content/uploads/2014/12/6531209575142566321.png" style="width:125px;height:125px;">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <h4><strong>Princess Leia</strong></h4>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">DASHBOARD</a></li>
+          <li><a href="/transactions">TRANSACTIONS</a></li>
+          <li><a href="/statistics">STATISTICS</a></li>
+          <li><a href="/settings">SETTINGS</a></li>
+        </ul>
       </div>
     </div>
-   </div>
+  </nav>
 
-<h2>Pick your splurges!</h2>
-<div class="settingsContainer" align = "center">
-  <div class="panel panel-default">
-    <table class="table splurges-table">
-      <tbody>
-        <tr>
-          <td><b>Savings/Donation?</b></td>
-          <td class="switch"><input id="cmn-toggle-4-17" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-17"></label></td>
-          </tr>
-          </tbody>
-      <tbody>
-        <tr>
-          <td>Dunkin' Donuts</td>
-          <td class="switch"><input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Dollar Tree</td>
-          <td class="switch"><input id="cmn-toggle-4-1" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-1"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Walmart</td>
-          <td class="switch"><input id="cmn-toggle-4-2" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-2"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Urban Outfitters</td>
-          <td class="switch"><input id="cmn-toggle-4-3" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-3"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Subway</td>
-          <td class="switch"><input id="cmn-toggle-4-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-4"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>McDonald's</td>
-          <td class="switch"><input id="cmn-toggle-4-5" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-5"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Sephora</td>
-          <td class="switch"><input id="cmn-toggle-4-6" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-6"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Target</td>
-          <td class="switch"><input id="cmn-toggle-4-7" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-7"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Kroger</td>
-          <td class="switch"><input id="cmn-toggle-4-8" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-8"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Starbucks</td>
-          <td class="switch"><input id="cmn-toggle-4-9" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-9"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>7-Eleven</td>
-          <td class="switch"><input id="cmn-toggle-4-10" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-10"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Michael Kors</td>
-          <td class="switch"><input id="cmn-toggle-4-11" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-11"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Home Depot</td>
-          <td class="switch"><input id="cmn-toggle-4-12" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-12"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>PetSmart</td>
-          <td class="switch"><input id="cmn-toggle-4-13" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-13"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Harris Teeter</td>
-          <td class="switch"><input id="cmn-toggle-4-14" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-14"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Dollar Tree</td>
-          <td class="switch"><input id="cmn-toggle-4-15" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-15"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Costco</td>
-          <td class="switch"><input id="cmn-toggle-4-16" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-16"></label></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Exxon</td>
-          <td class="switch"><input id="cmn-toggle-4-17" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-          <label for="cmn-toggle-4-17"></label></td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="jumbotron text-center">
+    <div class="row">
+      <div class="col-sm-6" align="right">
+        <h1>Vixen</h1>
+        <p>splurge less</p>
+      </div>
+      <div class="col-sm-6" align="left">
+        <img src="http://www.stickermotions.com/wp-content/uploads/2014/12/6531209575142566321.png" style="width:125px;height:125px;">
+      </div>
+    </div>
   </div>
-</div>
-</html>
 
+  <h2>Pick your splurges!</h2>
+  <div class="settingsContainer" align="center">
+    <div class="panel panel-default">
+      <table class="table splurges-table">
+        <tbody>
+          <tr>
+            <td>Dunkin' Donuts</td>
+            <td class="switch"><input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Dollar Tree</td>
+            <td class="switch"><input id="cmn-toggle-4-1" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-1"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Walmart</td>
+            <td class="switch"><input id="cmn-toggle-4-2" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-2"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Urban Outfitters</td>
+            <td class="switch"><input id="cmn-toggle-4-3" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-3"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Subway</td>
+            <td class="switch"><input id="cmn-toggle-4-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-4"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>McDonald's</td>
+            <td class="switch"><input id="cmn-toggle-4-5" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-5"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Sephora</td>
+            <td class="switch"><input id="cmn-toggle-4-6" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-6"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Target</td>
+            <td class="switch"><input id="cmn-toggle-4-7" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-7"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Kroger</td>
+            <td class="switch"><input id="cmn-toggle-4-8" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-8"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Starbucks</td>
+            <td class="switch"><input id="cmn-toggle-4-9" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-9"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>7-Eleven</td>
+            <td class="switch"><input id="cmn-toggle-4-10" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-10"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Michael Kors</td>
+            <td class="switch"><input id="cmn-toggle-4-11" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-11"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Home Depot</td>
+            <td class="switch"><input id="cmn-toggle-4-12" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-12"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>PetSmart</td>
+            <td class="switch"><input id="cmn-toggle-4-13" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-13"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Harris Teeter</td>
+            <td class="switch"><input id="cmn-toggle-4-14" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-14"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Dollar Tree</td>
+            <td class="switch"><input id="cmn-toggle-4-15" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-15"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Costco</td>
+            <td class="switch"><input id="cmn-toggle-4-16" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-16"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Exxon</td>
+            <td class="switch"><input id="cmn-toggle-4-17" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-17"></label></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td><b>Savings/Donation?</b></td>
+            <td class="switch"><input id="cmn-toggle-4-18" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+              <label for="cmn-toggle-4-18"></label></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</html>

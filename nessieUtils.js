@@ -64,7 +64,7 @@ module.exports.use = (apiKey, customerID) => {
             "medium": "balance",
             "payee_id": id2,
             "amount": amount,
-            "transaction_date": "2017-08-17",
+            "transaction_date": "2017-08-18",
             "description": "transfer of" + amount + "dollars from " + id1 + " to " + id2
         }).end();
     };

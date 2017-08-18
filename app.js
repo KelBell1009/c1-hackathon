@@ -15,6 +15,8 @@ const getTransactions = require('./routes/getTransactions');
 const getChecking = require('./routes/getChecking');
 const getSavings = require('./routes/getSavings');
 const getDonations = require('./routes/getDonations');
+const getTransactionsByMerchant = require('./routes/getTransactionsByMerchant');
+const getAmountByMerchant = require('./routes/getAmountByMerchant');
 const magic = require('./routes/magic');
 
 app.set('port', (process.env.PORT || 5000));
@@ -30,6 +32,8 @@ app.use('/', index); // Serve the index page.
 app.use('/magic', magic);
 app.use('/settings', settings);
 app.use('/getTransactions', getTransactions);
+app.use('/getTransactionsByMerchant', getTransactionsByMerchant);
+app.use('/getAmountByMerchant', getAmountByMerchant);
 app.use('/getChecking', getChecking);
 app.use('/getSavings', getSavings);
 app.use('/getDonations', getDonations);
@@ -41,6 +45,8 @@ app.use('/splurge', splurge);
 app.listen(app.get('port'), function () {
     console.log('Started on port ' + app.get('port') + '!');
 });
+
+utils.transferMoney(utils.checkingAccountID, "59965bfaceb8abe24251b67b", 5);
 // var dict = utils.filterTransactions("5995ff26ceb8abe24251ad1c");
 // console.log(dict);
 // utils.deleteAllAccounts();

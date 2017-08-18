@@ -260,15 +260,16 @@ $(function () {
   //   }
   // });
 
-  // $("cmn-toggle-4-17").click({
-  //   let isDonation = localStorage.getItem("isDonation");
-  //   if(isDonation == null) {
-  //     localStorage.setItem('isDonation', true);
-  //   }
-  //   else {
-  //     localStorage.setItem('isDonation', false);
-  //   }
-  // });
+  $("#cmn-toggle-4-18").click({
+    // console.log("hello");
+    let isDonation = localStorage.getItem("isDonation");
+    if(typeof isDonation != 'undefined') {
+      localStorage.setItem('isDonation', "true");
+    }
+    else {
+      localStorage.setItem('isDonation', "false");
+    }
+  });
 
   // Counter
   jQuery('.statistic-counter').counterUp({
