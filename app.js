@@ -22,7 +22,7 @@ app.set('views', path.join(__dirname, 'views')); // Specify our view folder expl
 app.engine('html', require('ejs').renderFile);
 app.use('/', index); // Serve the index page.
 app.use('/settings', settings);
-app.use('/getTransactions',getTransactions);
+app.use('/getTransactions', getTransactions);
 app.use('/transactions', transaction);
 app.use('/makePurchase', makePurchase);
 app.use('/splurge', splurge);
@@ -33,9 +33,9 @@ app.listen(app.get('port'), function () {
 // console.log(dict);
 // utils.deleteAllAccounts();
 // utils.createAccount("Checking", "Darth Vader's Personal Stash", 50000);
-for (var i = 0; i < 100; i++) {
-    utils.buyRandStuff("59963f42ceb8abe24251ae8e");
-}
+// for (var i = 0; i < 100; i++) {
+//     utils.buyRandStuff("59963f42ceb8abe24251ae8e");
+// }
 // request.post(utils.urlWrap("")).send({
 //         'first_name': 'Princess',
 //         'last_name': 'Leia',
