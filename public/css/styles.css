@@ -29,24 +29,21 @@ h4 {
 }
 
 .jumbotron {
-    background-color: rgb(164, 194, 244);;
+    background-color: rgb(164, 194, 244);
     color: #fff;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-}
-.container-fluid {
-    padding: 60px 50px;
 }
 .bg-grey {
     background-color: #f6f6f6;
 }
 
 .logo-small {
-    color: rgb(164, 194, 244);;
+    color: rgb(164, 194, 244);
     font-size: 50px;
 }
 .logo {
-    color: rgb(164, 194, 244);;
+    color: rgb(164, 194, 244);
     font-size: 200px;
 }
 .thumbnail {
@@ -70,7 +67,7 @@ h4 {
     font-style: normal;
 }
 .panel {
-    border: 1px solid rgb(164, 194, 244);;
+    border: 1px solid rgb(164, 194, 244);
     border-radius:0 !important;
     transition: box-shadow 0.5s;
 }
@@ -78,13 +75,13 @@ h4 {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 .panel-footer .btn:hover {
-    border: 1px solid rgb(164, 194, 244);;
+    border: 1px solid rgb(164, 194, 244);
     background-color: #fff !important;
     color: rgb(164, 194, 244);;
 }
 .panel-heading {
     color: #fff !important;
-    background-color: rgb(164, 194, 244); !important;
+    background-color: rgb(164, 194, 244) !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -104,12 +101,12 @@ h4 {
 }
 .panel-footer .btn {
     margin: 15px 0;
-    background-color: rgb(164, 194, 244);;
+    background-color: rgb(164, 194, 244);
     color: #fff;
 }
 .navbar {
     margin-bottom: 0;
-    background-color: rgb(164, 194, 244);;
+    background-color: rgb(164, 194, 244);
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -210,12 +207,12 @@ footer .glyphicon {
     font-size:36px;
 }
 .settingsContainer {
-  padding-left: 175px;
+  padding-left: 100px;
 }
 
 .panel {
-  width: 900px;
-  height: 1110px;
+  width: 800px;
+  height: 1200px;
   border-radius: 25px;
   font-size: 25px;
   color: black;
@@ -224,6 +221,18 @@ footer .glyphicon {
 
 .panel_body {
   font-size: 250px;
+}
+.splurgeContainer {
+  padding-left: 0px;
+}
+
+.panel {
+  width: 800px;
+  height: 1200px;
+  border-radius: 25px;
+  font-size: 25px;
+  color: black;
+  display: inline-block;
 }
 
 
@@ -311,11 +320,11 @@ input.cmn-toggle-round-flat + label:after
 
 input.cmn-toggle-round-flat:checked + label
 {
-  background-color: #27A1CA;
+  background-color: rgb(164, 194, 244);
 }
 
 input.cmn-toggle-round-flat:checked + label:after
 {
   margin-left: 45px;
-  background-color: #27A1CA;
+  background-color: rgb(164, 194, 244);
 }
