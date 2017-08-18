@@ -15,6 +15,7 @@ const getTransactions = require('./routes/getTransactions');
 const getChecking = require('./routes/getChecking');
 const getSavings = require('./routes/getSavings');
 const getDonations = require('./routes/getDonations');
+const magic = require('./routes/magic');
 
 app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.json());
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // Expose the public fo
 app.set('views', path.join(__dirname, 'views')); // Specify our view folder explicitly
 app.engine('html', require('ejs').renderFile);
 app.use('/', index); // Serve the index page.
+app.use('/magic', magic);
 app.use('/settings', settings);
 app.use('/getTransactions', getTransactions);
 app.use('/getChecking', getChecking);
