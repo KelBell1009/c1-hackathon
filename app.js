@@ -15,6 +15,8 @@ const getTransactions = require('./routes/getTransactions');
 const getChecking = require('./routes/getChecking');
 const getSavings = require('./routes/getSavings');
 const getDonations = require('./routes/getDonations');
+const getTransactionsByMerchant = require('./routes/getTransactionsByMerchant');
+const getAmountByMerchant = require('./routes/getAmountByMerchant');
 const magic = require('./routes/magic');
 
 app.set('port', (process.env.PORT || 5000));
@@ -30,6 +32,8 @@ app.use('/', index); // Serve the index page.
 app.use('/magic', magic);
 app.use('/settings', settings);
 app.use('/getTransactions', getTransactions);
+app.use('/getTransactionsByMerchant', getTransactionsByMerchant);
+app.use('/getAmountByMerchant', getAmountByMerchant);
 app.use('/getChecking', getChecking);
 app.use('/getSavings', getSavings);
 app.use('/getDonations', getDonations);
