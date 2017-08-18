@@ -21,22 +21,22 @@ $(function () {
     } // End if
   });
 
-  var myVal = $('counter').val();
+  var myVal = parseInt(document.getElementById("statistic-counter").innerText);
   if(myVal == 0) {
-      $('baby').show();
-      $('good').hide();
-      $('bad').hide();
+      $('#good').hide();
+      $('#bad').hide();
+      $('#baby').show();
       }
   else {
     if(myVal < 2) {
-      $('baby').hide();
-      $('good').hide();
-      $('bad').show();
+      $('#baby').hide();
+      $('#good').hide();
+      $('#bad').show();
     }
     else {
-      $('baby').hide();
-      $('good').show();
-      $('bad').hide();
+      $('#baby').hide();
+      $('#bad').hide();
+      $('#good').show();
     }
   }
   // $("cmn-toggle-4").click({
