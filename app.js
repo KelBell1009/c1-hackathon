@@ -6,6 +6,7 @@ const app = express();
 const index = require('./routes/index'); // Handle our requests in routes/index.js
 const settings = require('./routes/settings');
 const transaction = require('./routes/transaction');
+const statistics = require('./routes/statistics');
 const makePurchase = require('./routes/makePurchase');
 const splurge = require('./routes/splurge');
 const utils = require('./nessieUtils').use('4e7fe49f0f5ba28b8c28032a43551d7b', '59963e18ceb8abe24251ae8c');
@@ -24,6 +25,7 @@ app.use('/', index); // Serve the index page.
 app.use('/settings', settings);
 app.use('/getTransactions', getTransactions);
 app.use('/transactions', transaction);
+app.use('/statistics', statistics);
 app.use('/makePurchase', makePurchase);
 app.use('/splurge', splurge);
 app.listen(app.get('port'), function () {

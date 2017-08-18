@@ -29,7 +29,7 @@ h4 {
 }
 
 .jumbotron {
-    background-color: #3498DB;
+    background-color: rgb(164, 194, 244);;
     color: #fff;
     padding: 50px 25px;
     font-family: 'Raleway', sans-serif;
@@ -42,11 +42,11 @@ h4 {
 }
 
 .logo-small {
-    color: #3498DB;
+    color: rgb(164, 194, 244);;
     font-size: 50px;
 }
 .logo {
-    color: #3498DB;
+    color: rgb(164, 194, 244);;
     font-size: 200px;
 }
 .thumbnail {
@@ -70,7 +70,7 @@ h4 {
     font-style: normal;
 }
 .panel {
-    border: 1px solid #3498DB;
+    border: 1px solid rgb(164, 194, 244);;
     border-radius:0 !important;
     transition: box-shadow 0.5s;
 }
@@ -78,13 +78,13 @@ h4 {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 .panel-footer .btn:hover {
-    border: 1px solid #3498DB;
+    border: 1px solid rgb(164, 194, 244);;
     background-color: #fff !important;
-    color: #3498DB;
+    color: rgb(164, 194, 244);;
 }
 .panel-heading {
     color: #fff !important;
-    background-color: #3498DB !important;
+    background-color: rgb(164, 194, 244); !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -104,12 +104,12 @@ h4 {
 }
 .panel-footer .btn {
     margin: 15px 0;
-    background-color: #3498DB;
+    background-color: rgb(164, 194, 244);;
     color: #fff;
 }
 .navbar {
     margin-bottom: 0;
-    background-color: #3498DB;
+    background-color: rgb(164, 194, 244);;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -202,7 +202,7 @@ footer .glyphicon {
     overflow: hidden;
 }
 .main_counter_area .main_counter_content .single_counter{
-    background-color: #3498DB;
+    background-color: rgb(164, 194, 244);;
     color: #fff;
     border-radius: 25px;
 }

@@ -9,7 +9,8 @@ router.post('/', (req, res, next) => {
         let body = req.body;
         body.description = returnedRes.body.type + ',' + returnedRes.body.nickname + ',' + body.description;
         request.post(utils.urlWrap('accounts/59963f42ceb8abe24251ae8e/purchases')).send(body).end((err, returnedRes2) => {
-            res.json(returnedRes2);
+            // punish?
+            
         });
     });
 });
