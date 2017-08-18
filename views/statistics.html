@@ -20,33 +20,33 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <h4><strong>Princess Leia</strong></h4>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">DASHBOARD</a></li>
-            <li><a href="/transactions">TRANSACTIONS</a></li>
-            <li><a href="/statistics">STATISTICS</a></li>
-            <li><a href="/settings">SETTINGS</a></li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <h4><strong>Princess Leia</strong></h4>
       </div>
-    </nav>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">DASHBOARD</a></li>
+          <li><a href="/transactions">TRANSACTIONS</a></li>
+          <li><a href="/statistics">STATISTICS</a></li>
+          <li><a href="/settings">SETTINGS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <div class="jumbotron text-center">
-        <div class = "row">
-          <div class = "col-sm-6" align = "right">
-            <h1>Vixen</h1>
-            <p>splurge less</p>
-         </div>
-          <div class = "col-sm-6" align = "left">
-              <img src="http://www.stickermotions.com/wp-content/uploads/2014/12/6531209575142566321.png" style="width:125px;height:125px;">
-          </div>
-        </div>
-       </div>
+  <div class="jumbotron text-center">
+    <div class="row">
+      <div class="col-sm-6" align="right">
+        <h1>Vixen</h1>
+        <p>splurge less</p>
+      </div>
+      <div class="col-sm-6" align="left">
+        <img src="http://www.stickermotions.com/wp-content/uploads/2014/12/6531209575142566321.png" style="width:125px;height:125px;">
+      </div>
+    </div>
+  </div>
 
   <!-- Container (Statistics Section) -->
   <div id="about" class="container-fluid">
@@ -61,7 +61,7 @@
                   <div class="main_counter_content text-center white-text wow fadeInUp">
                     <div class="col-md-3">
                       <div class="single_counter p-y-2 m-t-1">
-                        <h2 class="statistic-counter">0</h2>
+                        <h2 id="statistic-counter"></h2>
                         <h4>days since last splurge!</h4>
                       </div>
                     </div>
@@ -72,28 +72,28 @@
           </div>
         </section>
       </div>
-      <div class="col-sm-4" tr valign = "middle">
-          <div class="row">
-            <div class="col-sm-6">
-              <h3>Transferred to Savings</h3>
-              <h4 id="movedSave"></h4>
-            </div>
-            <div class="col-sm-6">
-              <h3>Donated</h3>
-              <h4 id="movedDonate"></h4>
-            </div>
+      <div class="col-sm-4" tr valign="middle">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Transferred to Savings</h3>
+            <h4 id="movedSave"></h4>
           </div>
+          <div class="col-sm-6">
+            <h3>Donated</h3>
+            <h4 id="movedDonate"></h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="col-sm-5">
-      <div class="col-sm-4">
-        <!--<canvas id="doughnutChart"></canvas>-->
-          <div id="piechart" style="width: 900px; height: 500px;"></div>
-      </div>
+    <div class="col-sm-4">
+      <!--<canvas id="doughnutChart"></canvas>-->
+      <div id="piechart" style="width: 900px; height: 500px;"></div>
     </div>
   </div>
-  <script src="js/indexjs.js"></script>
+  </div>
+  <script src="js/statisticsjs.js"></script>
   <script src="js/utils.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
