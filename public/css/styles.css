@@ -31,8 +31,8 @@ h4 {
 .jumbotron {
     background-color: rgb(164, 194, 244);;
     color: #fff;
-    padding: 50px 25px;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 .container-fluid {
     padding: 60px 50px;
