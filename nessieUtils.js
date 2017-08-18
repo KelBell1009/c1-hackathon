@@ -95,6 +95,9 @@ module.exports.use = (apiKey, customerID) => {
         deleteAccount: deleteAccount,
         deleteAllAccounts: deleteAllAccounts,
         transferMoney: transferMoney,
-        filterTransactions: filterTransactions
+        filterTransactions: filterTransactions,
+        checkingAccountID: "59966295ceb8abe24251b689",
+        savingsAccountID: "59965c17ceb8abe24251b67c",
+        donationsAccountID: "59965bfaceb8abe24251b67b"
     }
 };

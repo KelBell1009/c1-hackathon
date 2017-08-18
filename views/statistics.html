@@ -1,112 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Vixen</title>
   <link rel="icon" href="http://www.stickermotions.com/wp-content/uploads/2014/12/6531209575142566321.png">;
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-	<link href="css/styles.css" rel="stylesheet"></script>
+  <link href="css/styles.css" rel="stylesheet">
+  </script>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <h4><strong>Princess Leia</strong></h4>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <h4><strong>Princess Leia</strong></h4>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
           <li><a href="/">DASHBOARD</a></li>
           <li><a href="/transactions">TRANSACTIONS</a></li>
           <li><a href="/statistics">STATISTICS</a></li>
           <li><a href="/settings">SETTINGS</a></li>
-      </ul>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1>Vixen</h1>
+    <p>splurge less</p>
   </div>
-</nav>
 
-<div class="jumbotron text-center">
-  <h1>Vixen</h1>
-  <p>splurge less</p>
-</div>
-
-<!-- Container (Statistics Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-3">
-      <!-- Counter -->
-      <section id="counter" class="counter">
-            <div class="main_counter_area">
-                <div class="overlay p-y-3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="main_counter_content text-center white-text wow fadeInUp">
-                                <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1">
-                                        <h2 class="statistic-counter">100</h2>
-                                        <h4>Days since last splurge!</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  <!-- Container (Statistics Section) -->
+  <div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <!-- Counter -->
+        <section id="counter" class="counter">
+          <div class="main_counter_area">
+            <div class="overlay p-y-3">
+              <div class="container">
+                <div class="row">
+                  <div class="main_counter_content text-center white-text wow fadeInUp">
+                    <div class="col-md-3">
+                      <div class="single_counter p-y-2 m-t-1">
+                        <h2 class="statistic-counter">100</h2>
+                        <h4>Days since last splurge!</h4>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </section>
-    </div>
-    <div class="col-sm-3">
-      <!--<canvas id="doughnutChart"></canvas>-->
-      <head>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-          google.charts.load("current", {packages:["corechart"]});
-          google.charts.setOnLoadCallback(drawChart);
-          function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-              ['Language', 'Speakers (in millions)'],
-              ['Assamese', 13], ['Bengali', 83], ['Bodo', 1.4],
-              ['Dogri', 2.3], ['Gujarati', 46], ['Hindi', 300],
-              ['Kannada', 38], ['Kashmiri', 5.5], ['Konkani', 5],
-              ['Maithili', 20], ['Malayalam', 33], ['Manipuri', 1.5],
-              ['Marathi', 72], ['Nepali', 2.9], ['Oriya', 33],
-              ['Punjabi', 29], ['Sanskrit', 0.01], ['Santhali', 6.5],
-              ['Sindhi', 2.5], ['Tamil', 61], ['Telugu', 74], ['Urdu', 52]
-            ]);
-    
-            var options = {
-              title: 'Indian Language Use',
-              legend: 'none',
-              pieSliceText: 'label',
-              slices: {  4: {offset: 0.2},
-                        12: {offset: 0.3},
-                        14: {offset: 0.4},
-                        15: {offset: 0.5},
-              },
-            };
-    
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-            chart.draw(data, options);
-          }
-        </script>
-      </head>
-      <body>
-        <div id="piechart" style="width: 900px; height: 500px;"></div>
-      </body>
-    </div>
-    <div class="col-sm-4">
-      <!--<canvas id="doughnutChart"></canvas>-->
+      </div>
+      <div class="col-sm-4">
+        <!--<canvas id="doughnutChart"></canvas>-->
+
+        <head>
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load("current", {
+              packages: ["corechart"]
+            });
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+              var data = google.visualization.arrayToDataTable([
+                ['Language', 'Speakers (in millions)'],
+                ['Assamese', 13],
+                ['Bengali', 83],
+                ['Bodo', 1.4],
+                ['Dogri', 2.3],
+                ['Gujarati', 46],
+                ['Hindi', 300],
+                ['Kannada', 38],
+                ['Kashmiri', 5.5],
+                ['Konkani', 5],
+                ['Maithili', 20],
+                ['Malayalam', 33],
+                ['Manipuri', 1.5],
+                ['Marathi', 72],
+                ['Nepali', 2.9],
+                ['Oriya', 33],
+                ['Punjabi', 29],
+                ['Sanskrit', 0.01],
+                ['Santhali', 6.5],
+                ['Sindhi', 2.5],
+                ['Tamil', 61],
+                ['Telugu', 74],
+                ['Urdu', 52]
+              ]);
+
+              var options = {
+                title: 'Indian Language Use',
+                legend: 'none',
+                pieSliceText: 'label',
+                slices: {
+                  4: {
+                    offset: 0.2
+                  },
+                  12: {
+                    offset: 0.3
+                  },
+                  14: {
+                    offset: 0.4
+                  },
+                  15: {
+                    offset: 0.5
+                  },
+                },
+              };
+
+              var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+              chart.draw(data, options);
+            }
+          </script>
+        </head>
+
+        <body>
+          <div id="piechart" style="width: 900px; height: 500px;"></div>
+        </body>
+      </div>
     </div>
   </div>
-</div>
-<script src="js/indexjs.js"></script>
+  <script src="js/indexjs.js"></script>
 
 </body>
+
 </html>

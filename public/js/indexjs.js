@@ -57,39 +57,50 @@ $(function () {
     });
   });
 });
-console.log("derp");
-$.ajax({
-  url: '/getTransactions',
-  type: 'GET',
-  dataType: 'json',
-  success: function (data) {
-    console.log(data);
-    $.ajax({
-      url: '/splurge',
-      type: 'GET',
-      dataType: 'json',
-      success: function (data2) {
-        console.log(data2);
-        data.forEach(function (element1) {
-          data2.forEach(function (element) {
-            if (element.length > 0) {
-              if (element1.description.split(',')[2] == element) {
-                console.log(element1.amount);
-                return element1.purchase_date;
-              }
-            }
-          }, this);
-        }, this);
-      },
-      error: function () {
-        data_output = true;
-        failed_call = true;
-      }
-    });
-  },
-  error: function () {
-    data_output = true;
-    failed_call = true;
-  }
-});
+// console.log("derp");
+// $.ajax({
+//   url: '/getTransactions',
+//   type: 'GET',
+//   dataType: 'json',
+//   success: function (data) {
+//     console.log(data);
+//     $.ajax({
+//       url: '/splurge',
+//       type: 'GET',
+//       dataType: 'json',
+//       success: function (data2) {
+//         console.log(data2);
+//         data.forEach(function (element1) {
+//           data2.forEach(function (element) {
+//             if (element.length > 0) {
+//               if (element1.description.split(',')[2] == element) {
+//                 console.log(element1.amount);
+//                 return element1.purchase_date;
+//               }
+//             }
+//           }, this);
+//         }, this);
+//       },
+//       error: function () {
+//         data_output = true;
+//         failed_call = true;
+//       }
+//     });
+//   },
+//   error: function () {
+//     data_output = true;
+//     failed_call = true;
+//   }
+// });
 
+// $.ajax({{
+//         url: '/splurge',
+//         type: 'GET',
+//         dataType: 'json',
+//         success: function (data2) {
+//         },
+//         error: function () {
+//           data_output = true;
+//           failed_call = true;
+//         }}
+//       });

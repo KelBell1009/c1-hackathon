@@ -12,6 +12,10 @@ const splurge = require('./routes/splurge');
 const utils = require('./nessieUtils').use('4e7fe49f0f5ba28b8c28032a43551d7b', '59963e18ceb8abe24251ae8c');
 const request = require('superagent');
 const getTransactions = require('./routes/getTransactions');
+const getChecking = require('./routes/getChecking');
+const getSavings = require('./routes/getSavings');
+const getDonations = require('./routes/getDonations');
+
 app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -24,6 +28,10 @@ app.engine('html', require('ejs').renderFile);
 app.use('/', index); // Serve the index page.
 app.use('/settings', settings);
 app.use('/getTransactions', getTransactions);
+app.use('/getChecking', getChecking);
+app.use('/getSavings', getSavings);
+app.use('/getDonations', getDonations);
+
 app.use('/transactions', transaction);
 app.use('/statistics', statistics);
 app.use('/makePurchase', makePurchase);
@@ -34,7 +42,9 @@ app.listen(app.get('port'), function () {
 // var dict = utils.filterTransactions("5995ff26ceb8abe24251ad1c");
 // console.log(dict);
 // utils.deleteAllAccounts();
-// utils.createAccount("Checking", "Darth Vader's Personal Stash", 50000);
+// utils.createAccount("Checking", "Main Checking", 100000);
+// utils.createAccount("Savings", "Life Savings for RETIREMENT", 0);
+
 // for (var i = 0; i < 100; i++) {
 //     utils.buyRandStuff("59963f42ceb8abe24251ae8e");
 // }
