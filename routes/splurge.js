@@ -27,18 +27,12 @@ router.put('/', (req, res, next) => {
     .end((err, returnedRes) => {
         let json = returnedRes.body.address;
         let splurgeList = json.street_number.trim() + ',';
-        let listToAppend = req.body.join(',').filter(entry => entry.trim() != '');
+        let listToAppend = req.body.join(',');
         let result = splurgeList + listToAppend;
         json.street_number = result;
         request.put(utils.urlWrap('customers/5995a81dceb8abe24251849e'))
         .send({
-            'address': {
-                'street_number': result,
-                'street_name': 'Pennsylvania Ave',
-                'city': 'Washington',
-                'state': 'DC',
-                'zip': '20500'
-            }
+            'address': json
         })
         .end((err, returnedRes2) => {
             res.json(returnedRes2);
