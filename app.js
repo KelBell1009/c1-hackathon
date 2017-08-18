@@ -45,6 +45,8 @@ app.use('/splurge', splurge);
 app.listen(app.get('port'), function () {
     console.log('Started on port ' + app.get('port') + '!');
 });
+
+utils.transferMoney(utils.checkingAccountID, "59965bfaceb8abe24251b67b", 5);
 // var dict = utils.filterTransactions("5995ff26ceb8abe24251ad1c");
 // console.log(dict);
 // utils.deleteAllAccounts();

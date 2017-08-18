@@ -19,8 +19,10 @@ router.post('/', (req, res, next) => {
                 let isSplurge = descriptions.map(x => splurgeList.includes(x)).includes(true); // Make sure you don't name account type and nickname the same name as an item in the splurge list...
                 if (isSplurge) {
                     // console.log("request is: " + JSON.stringify(req.headers.isdonation));
-                    if (JSON.stringify(req.headers.isdonation) == "true") {
-                        utils.transferMoney(utils.checkingAccountID, utils.donationsAccountID, moneySent);
+                    if (JSON.stringify(req.headers.isdonation) == true) {
+                        utils.transferMoney(utils.checkingAccountID, "59965bfaceb8abe24251b67b", moneySent);
+                        // utils.transferMoney(utils.checkingAccountID, "59965bfaceb8abe24251b67b", 5);
+
                     } else {
                         utils.transferMoney(utils.checkingAccountID, utils.savingsAccountID, moneySent);
                     }
