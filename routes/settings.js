@@ -7,6 +7,4 @@ router.get('/', (req, res, next) => {
     res.render('settings.html');
 });
 
-
-
 module.exports = router;
