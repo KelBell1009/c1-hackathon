@@ -27,6 +27,12 @@ h4 {
     margin-bottom: 30px;
     font-family: 'Raleway', sans-serif;
 }
+
+#aboutbottom {
+    color: rgba(0, 0, 0, 0.00);
+}
+
+
 .jumbotron {
     background-color: #3498DB;
     color: #fff;
@@ -39,6 +45,7 @@ h4 {
 .bg-grey {
     background-color: #f6f6f6;
 }
+
 .logo-small {
     color: #3498DB;
     font-size: 50px;
