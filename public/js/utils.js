@@ -1,4 +1,5 @@
 function generatePurchase(merchant_id, store_name, amount, medium, purchase_date, isDonation) {
+    
     const data = {
         "merchant_id": merchant_id,
         "medium": medium,
