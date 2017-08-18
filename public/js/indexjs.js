@@ -258,6 +258,13 @@ $(function () {
     time: 2000
   });
 
+  $.get('/getChecking', function(data) {
+     document.getElementById('checking').innerText = data.balance;
+  });
+  $.get('/getSavings', function(data) {
+     document.getElementById('saving').innerText = data.balance;
+  });
+
   //doughnut pie chart
   // var ctxD = document.getElementById("doughnutChart").getContext('2d');
   // var myLineChart = new Chart(ctxD, {
