@@ -11,10 +11,11 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
+    console.log(req.body.join(','));
     request.put(utils.urlWrap('customers/59963e18ceb8abe24251ae8c'))
     .send({
         'address': {
-            'street_number': req.body.trim().join(',')
+            'street_number': req.body.join(',')
         }
     })
     .end((err, returnedRes2) => {
@@ -26,7 +27,8 @@ router.put('/', (req, res, next) => {
     request.get(utils.urlWrap('customers/59963e18ceb8abe24251ae8c'))
     .end((err, returnedRes) => {
         let json = returnedRes.body.address;
-        let splurgeList = json.street_number.trim() + ',';
+        console.log(json.street_number.length);
+        let splurgeList = json.street_number.length === 1 ? '' : json.street_number.trim() + ',';
         let listToAppend = req.body.join(',');
         let result = splurgeList + listToAppend;
         json.street_number = result;
@@ -48,7 +50,7 @@ router.delete('/', (req, res, next) => {
         }
     })
     .end((err, returnedRes2) => {
-        console.log(returnedRes2);
+        res.json(returnedRes2);
     });
 });
 
